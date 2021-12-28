@@ -1,0 +1,98 @@
+/*--------------------------------------------------------------
+# Section3 -  Welcome section
+--------------------------------------------------------------*/
+
+.welcome-section{
+    margin-top: 10rem;
+
+    &_heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &_subtext{
+            color: $color-secondary;
+            text-transform: uppercase;
+            font-weight: 600;
+            position: relative;
+
+            &:before{
+                content: "";
+                position: absolute;
+                height: 50px;
+                width: 50px;
+                background-color: #F0E6E0;
+                border-radius: 5px;
+                z-index: -1;
+                bottom: -1rem;
+                left: -2rem;
+            }
+
+            &:after{
+                content:'';
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                background-color: #F0E6E0;
+                border:2.5px solid #fff;
+                border-radius: 5px;
+                z-index: 0;
+                bottom: 2.5rem;
+                left: 1.5rem;
+            }
+        }
+        h2{
+            margin-top:1rem;
+            font-size: 3.8rem;
+        }
+        p{
+            width:40rem;
+            text-align: center;
+        }
+    }
+    &_content-wrapper{
+        margin-top: 8rem;
+        display: flex;
+        flex-direction: row;
+        .image{
+            flex: 0 0 50%;
+        }
+        .side-content{
+            flex:1;
+
+            &_subtext{
+                color: $color-secondary;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+            h3{
+                font-size: 3rem;
+                line-height: 4rem;
+                margin: 1rem 0;
+            }
+
+            &_icons{
+                margin-top: 5rem;
+                display: flex;
+                justify-content: space-between;
+                p{
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: $color-primary;
+                }
+
+                &_A{
+                    display: flex;
+                    height: 100%;
+                    
+                }
+                &_B{
+                    display: flex;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

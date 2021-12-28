@@ -1,0 +1,16 @@
+/*--------------------------------------------------------------
+# Section2 - Client section
+--------------------------------------------------------------*/
+.client-section{
+    height:15rem;
+    width:100%;
+    background-color: $color-primary;
+
+    &_flex-wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+}
