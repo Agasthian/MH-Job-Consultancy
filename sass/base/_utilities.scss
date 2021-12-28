@@ -1,0 +1,20 @@
+/*********** Container ***********/
+.container{
+    max-width: 124rem;
+    padding: 0 4rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*********** Center Align Content ***********/
+.center-align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/******** Flex Box Template  **********/
+.flex-wrapper{
+    display:flex;
+    flex-wrap:wrap;
+}

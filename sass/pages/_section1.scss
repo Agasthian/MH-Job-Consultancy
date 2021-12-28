@@ -1,0 +1,44 @@
+/*--------------------------------------------------------------
+# Section1 - banner section
+--------------------------------------------------------------*/
+/* Nav css imported from - layout/nav.scss*/
+
+.banner-section{
+
+    &_wrapper{
+        height: 87vh;
+        display: flex;
+        flex-wrap: wrap;
+
+        &_content{
+            flex: 0 0 55%;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 5rem 0 25rem;
+            background-image: url('../../img/pattern-1.png');
+
+            .sub_heading{
+                color:$color-secondary;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            h1{
+                line-height: 5.4rem;
+            }
+        }
+        &_img{
+            flex: 1 1 0;
+            background-image: url('../../img/banner-1.jpg');
+            background-size: cover;
+            background-position:center;
+
+            img{
+                width: 520px;
+                height: auto;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }   
+    }
+}
