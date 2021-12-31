@@ -82,7 +82,13 @@ p {
 /*********** Container ***********/
 .container {
   max-width: 124rem;
-  padding: 0 4rem;
+  padding: 0 10rem;
+  margin: 0 auto;
+  width: 100%; }
+
+.container-short {
+  max-width: 124rem;
+  padding: 0 15rem;
   margin: 0 auto;
   width: 100%; }
 
@@ -188,9 +194,11 @@ p {
     .header {
       min-height: 10vh; } }
   .header .logo {
-    padding: 14px 75px 15px 35px;
+    padding: 14px 20px 15px 35px;
     background: #462b34;
     border-bottom-right-radius: 25px; }
+    .header .logo img {
+      width: 80%; }
   .header ul.main-nav {
     display: flex;
     width: 65%;
@@ -219,75 +227,54 @@ p {
 /* ================================= 
   Media Queries
 ==================================== */
-/*-------------------------------------------------------------
-# CSS for Footer- ASSET Foundation
+/*--------------------------------------------------------------
+# Footer -  Contact section
 --------------------------------------------------------------*/
-footer {
-  background-color: #333; }
-  footer .footer_class {
-    margin-top: 2rem; }
-    footer .footer_class .content1 {
-      margin-bottom: 3%;
-      padding-top: 1rem; }
-      footer .footer_class .content1 address {
-        color: #fff;
-        font-family: 'Montserrat', serif;
-        font-size: 15px; }
-        footer .footer_class .content1 address h3 {
-          margin-top: 4%;
-          font-family: Montserrat;
-          color: #fff; }
-      footer .footer_class .content1 p {
-        color: #fff;
-        font-family: Montserrat;
-        text-align: -webkit-center;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 15px; }
-        footer .footer_class .content1 p a {
-          margin-left: 5%; }
-      footer .footer_class .content1 a {
-        color: #fff; }
-      footer .footer_class .content1 a:visited {
-        color: #fff; }
-      footer .footer_class .content1 a:hover {
-        color: #FFEB3B;
-        transition: 0.5s all;
-        text-decoration: none; }
-
-.footer2 {
-  background-color: #e8ce16;
-  text-align: -webkit-center; }
-
-.footer2 p {
-  font-family: Montserrat;
-  text-transform: uppercase;
-  color: #333;
-  margin-top: 30px;
-  letter-spacing: 2px;
-  text-align: center; }
-
-.footer2 img {
-  width: 29%; }
+.footer-section {
+  background-color: #462b34;
+  height: 45rem;
+  width: 100%;
+  position: relative; }
+  .footer-section_bg-img {
+    background-image: url("../../img/pattern-11.png");
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    animation: slide 100s linear infinite;
+    -webkit-animation: slide 100s linear infinite; }
+  .footer-section_top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 4rem;
+    padding-top: 10rem;
+    height: 40rem;
+    color: #ae979f;
+    font-size: 1.6rem; }
+    .footer-section_top h4 {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 700; }
+    .footer-section_top_widget1 {
+      flex: 0 0 33%; }
+    .footer-section_top_widget2 {
+      flex: 0 0 33%; }
+    .footer-section_top_widget3 {
+      flex: 0 0 33%; }
+  .footer-section_bottom hr {
+    border: 1px solid  #ae979f; }
+  .footer-section_bottom_content {
+    display: flex;
+    justify-content: space-between; }
 
 /*--------- End of Footer----------*/
 /*Container*/
-.container {
-  max-width: 124rem;
-  padding: 0px 4rem;
-  margin: 0px auto;
-  width: 100%; }
-
-.sectionwrapper {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center; }
-
 /*--------------------------------------------------------------
 # Section1 - banner section
 --------------------------------------------------------------*/
@@ -348,7 +335,8 @@ footer {
       color: #ff5956;
       text-transform: uppercase;
       font-weight: 600;
-      position: relative; }
+      position: relative;
+      z-index: 2; }
       .welcome-section_heading_subtext:before {
         content: "";
         position: absolute;
@@ -408,8 +396,156 @@ footer {
           height: 100%; }
 
 /*--------------------------------------------------------------
-# Section4 -  section
+# Section4 - About section
 --------------------------------------------------------------*/
+.about-section {
+  margin-top: 15rem;
+  position: relative; }
+  .about-section_bg-img {
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    background-image: url("../../img/pattern-5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    z-index: -2;
+    top: 423px; }
+  .about-section_content_box {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 #cecece;
+    border-radius: 10px; }
+    .about-section_content_box_left .image-box {
+      height: 420px; }
+    .about-section_content_box_left .inner-box {
+      background-color: #462B34;
+      height: 38rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .about-section_content_box_left .inner-box h3 {
+        color: #fff;
+        font-size: 2rem;
+        width: 20rem;
+        text-align: center;
+        margin-top: 2rem; }
+    .about-section_content_box_right {
+      padding: 10rem 7rem;
+      background-color: #fff; }
+      .about-section_content_box_right h2 {
+        margin: 2rem 0;
+        font-size: 3rem; }
+      .about-section_content_box_right .auth-box {
+        margin-top: 5rem;
+        background-color: #F0E6E0;
+        border-radius: 60px;
+        padding: 4rem 5rem;
+        justify-content: center; }
+        .about-section_content_box_right .auth-box h3 {
+          font-size: 1.8rem; }
+
 /*--------------------------------------------------------------
 # Section5 -  section
+--------------------------------------------------------------*/
+.solutions-section {
+  margin-top: 10rem;
+  margin-bottom: 20rem;
+  position: relative;
+  text-align: center; }
+  .solutions-section_bg-img {
+    position: absolute;
+    background-image: url("../../img/pattern-6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 30rem;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 400px;
+    z-index: -2; }
+  .solutions-section h2 {
+    margin: 1rem 0;
+    font-size: 4rem; }
+  .solutions-section p {
+    padding: 0 38rem; }
+  .solutions-section_3boxes {
+    margin-top: 5rem;
+    display: flex;
+    gap: 1rem; }
+    .solutions-section_3boxes_box1 {
+      background-image: url("../../img/service-1.jpg");
+      height: 300px;
+      width: 100%;
+      background-repeat: no-repeat;
+      position: relative; }
+      .solutions-section_3boxes_box1 .card {
+        background-color: #fff;
+        height: 150px;
+        width: 200px;
+        box-shadow: 0 0 20px 0 #8b8b8b;
+        border-radius: 10px;
+        position: absolute;
+        top: 20rem;
+        left: 9rem; }
+        .solutions-section_3boxes_box1 .card img {
+          margin-top: 3rem; }
+        .solutions-section_3boxes_box1 .card p {
+          width: 200px;
+          font-size: 2rem;
+          font-weight: 700;
+          padding: 0;
+          color: #462B34; }
+    .solutions-section_3boxes_box2 {
+      background-image: url("../../img/service-2.jpg");
+      background-repeat: no-repeat;
+      height: 300px;
+      width: 100%;
+      position: relative; }
+      .solutions-section_3boxes_box2 .card {
+        background-color: #fff;
+        height: 150px;
+        width: 200px;
+        box-shadow: 0 0 20px 0 #8b8b8b;
+        border-radius: 10px;
+        position: absolute;
+        top: 20rem;
+        left: 9rem; }
+        .solutions-section_3boxes_box2 .card img {
+          margin-top: 3rem; }
+        .solutions-section_3boxes_box2 .card p {
+          width: 200px;
+          font-size: 2rem;
+          font-weight: 700;
+          padding: 0;
+          color: #462B34; }
+    .solutions-section_3boxes_box3 {
+      background-image: url("../../img/service-3.jpg");
+      background-repeat: no-repeat;
+      height: 300px;
+      width: 100%;
+      position: relative; }
+      .solutions-section_3boxes_box3 .card {
+        background-color: #fff;
+        height: 150px;
+        width: 200px;
+        box-shadow: 0 0 20px 0 #8b8b8b;
+        border-radius: 10px;
+        position: absolute;
+        top: 20rem;
+        left: 9rem; }
+        .solutions-section_3boxes_box3 .card img {
+          margin-top: 3rem; }
+        .solutions-section_3boxes_box3 .card p {
+          width: 200px;
+          font-size: 2rem;
+          font-weight: 700;
+          padding: 0;
+          color: #462B34; }
+
+/*--------------------------------------------------------------
+# section 6 -  Contact section
 --------------------------------------------------------------*/

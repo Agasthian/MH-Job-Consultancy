@@ -16,6 +16,7 @@
             text-transform: uppercase;
             font-weight: 600;
             position: relative;
+            z-index: 2;
 
             &:before{
                 content: "";

@@ -1,7 +1,13 @@
 /*********** Container ***********/
 .container{
     max-width: 124rem;
-    padding: 0 4rem;
+    padding: 0 10rem;
+    margin: 0 auto;
+    width: 100%;
+}
+.container-short{
+    max-width: 124rem;
+    padding: 0 15rem;
     margin: 0 auto;
     width: 100%;
 }

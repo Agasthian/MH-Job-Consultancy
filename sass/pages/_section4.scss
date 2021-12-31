@@ -1,3 +1,72 @@
 /*--------------------------------------------------------------
-# Section4 -  section
+# Section4 - About section
 --------------------------------------------------------------*/
+
+.about-section{
+    margin-top: 15rem;
+    position: relative;
+    
+    &_bg-img{
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        background-image: url('../../img/pattern-5.png');    
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        z-index: -2;
+        top: 423px;
+        
+    }
+        
+    &_content_box{
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        box-shadow: 0 0 20px 0 #cecece;
+        border-radius: 10px;
+
+        &_left{
+
+            .image-box{
+                height: 420px;
+            }
+            .inner-box{
+                background-color: $color-primary;
+                height:38rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                h3{
+                    color:#fff;
+                    font-size: 2rem;
+                    width: 20rem;
+                    text-align: center;
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+        &_right{
+            padding: 10rem 7rem;
+            background-color: #fff;
+            h2{
+                margin: 2rem 0;
+                font-size: 3rem;
+            }
+
+            .auth-box{
+                margin-top: 5rem;
+                background-color: #F0E6E0;
+                border-radius: 60px;
+                padding: 4rem 5rem;
+                justify-content: center;
+                h3{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
