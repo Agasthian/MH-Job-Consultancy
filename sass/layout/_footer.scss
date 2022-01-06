@@ -9,6 +9,10 @@
     width: 100%;
     position: relative;
 
+    @include respond(small) {
+        height: 50rem;
+    }
+
     &_bg-img{
         background-image: url('../../img/pattern-11.png');
         position: absolute;

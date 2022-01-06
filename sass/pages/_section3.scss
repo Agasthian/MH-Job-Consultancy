@@ -46,6 +46,9 @@
         h2{
             margin-top:1rem;
             font-size: 3.8rem;
+            @include respond(small) {
+                font-size: 3rem;
+            }
         }
         p{
             width:40rem;
@@ -56,8 +59,13 @@
         margin-top: 8rem;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         .image{
             flex: 0 0 50%;
+
+            img{
+                width: 290px;
+            }
         }
         .side-content{
             flex:1;
@@ -83,7 +91,9 @@
                     font-weight: bold;
                     color: $color-primary;
                 }
-
+                img{
+                    height: 100%;
+                }
                 &_A{
                     display: flex;
                     height: 100%;

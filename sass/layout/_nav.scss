@@ -10,15 +10,25 @@
 
 	@include respond(largest) {
 		//width < 1920px
+		min-height: 8vh;
+	}
+	@include respond(small) {
 		min-height: 10vh;
-	  }
+	}
 
 	.logo {
 		padding:14px 20px 15px 35px;
-		background: #462b34;
+		background: $color-primary;
 		border-bottom-right-radius: 25px;
+		@include respond(small) {
+			padding: 16px;
+		}
+
 		img{
 			width: 80%;
+			@include respond(small) {
+				width: 150px;	
+			}
 		}
 	}
 
@@ -45,8 +55,19 @@
 				transition: ease-out 0.2s all;
 			}
 		}
+
+		@include respond(small) {
+			display: none;
+		}
 	}
 
+	p.hamburger{
+		display: none;
+
+		@include respond(small) {
+			display: block;
+		}
+	}
 
 }
 
@@ -67,36 +88,3 @@
 
 
 
-
-
-/* ================================= 
-  Media Queries
-==================================== */
-
-
-
-
-// @media (min-width: 769px) {
-// 	.header,
-// 	.main-nav {
-// 		display: flex;
-// 	}
-// 	.header {
-// 		flex-direction: column;
-// 		align-items: center;
-//     	.header{
-// 		width: 80%;
-// 		margin: 0 auto;
-// 		max-width: 1150px;
-// 	}
-// 	}
-
-// }
-
-// @media (min-width: 1025px) {
-// 	.header {
-// 		flex-direction: row;
-// 		justify-content: space-between;
-// 	}
-
-// }

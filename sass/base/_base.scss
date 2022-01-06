@@ -13,7 +13,7 @@ html {
 
   @include respond(tab-port) {
     //width <768px
-    font-size: 36%; //1rem = 5.8px;  5.8px/16 = 36%
+    // font-size: 36%; //1rem = 5.8px;  5.8px/16 = 36%
   }
   @include respond(small) {
     //width < 425px - phone large
@@ -21,11 +21,11 @@ html {
   }
   @include respond(smaller) {
     //width < 375px - phone
-    font-size: 38%; //1rem = 5px;  5px/16 = 31%
+    // font-size: 38%; //1rem = 5px;  5px/16 = 31%
   }
   @include respond(smallest) {
     //width < 325px - phone
-    font-size: 35%;
+    // font-size: 35%;
   }
 
   @include respond(medium) {

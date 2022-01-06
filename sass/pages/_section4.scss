@@ -16,6 +16,9 @@
         background-position: bottom center;
         z-index: -2;
         top: 423px;
+        @include respond(small) {
+            top:224px
+        }
         
     }
         
@@ -26,10 +29,25 @@
         box-shadow: 0 0 20px 0 #cecece;
         border-radius: 10px;
 
+        @include respond(small) {
+            flex-wrap: wrap;
+        }
+
         &_left{
 
             .image-box{
                 height: 420px;
+                @include respond(small) {
+                    height: 35rem;
+                }
+
+                
+                img{
+                    @include respond(small) {
+                        width: 100%;
+                    }
+
+                }
             }
             .inner-box{
                 background-color: $color-primary;

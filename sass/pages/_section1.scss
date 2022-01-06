@@ -9,6 +9,10 @@
         height: 87vh;
         display: flex;
         flex-wrap: wrap;
+        @include respond(small) {
+            height: 90vh;
+            flex-direction: column-reverse;
+        }
 
         &_content{
             flex: 0 0 55%;
@@ -24,6 +28,10 @@
             }
             h1{
                 line-height: 5.4rem;
+            }
+
+            @include respond(small) {
+                padding: 12rem;
             }
         }
         &_img{

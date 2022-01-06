@@ -13,4 +13,12 @@
         height: 100%;
         flex-wrap: wrap;
     }
+
+    @include respond(small) {
+        height: 30rem;
+
+        img{
+            width:15rem;
+        }
+    }
 }

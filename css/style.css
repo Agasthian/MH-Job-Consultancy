@@ -24,18 +24,9 @@ $breakpoint argument choices:
 html {
   scroll-behavior: smooth;
   font-size: 62.5%; }
-  @media (max-width: 48em) {
-    html {
-      font-size: 36%; } }
   @media (max-width: 26.62em) {
     html {
       font-size: 40%; } }
-  @media (max-width: 23.5em) {
-    html {
-      font-size: 38%; } }
-  @media (max-width: 20em) {
-    html {
-      font-size: 35%; } }
   @media (min-width: 26.68em) {
     html {
       font-size: 43%; } }
@@ -192,13 +183,22 @@ p {
   box-shadow: 0 0 20px 0 #cecece; }
   @media (min-width: 120em) {
     .header {
+      min-height: 8vh; } }
+  @media (max-width: 26.62em) {
+    .header {
       min-height: 10vh; } }
   .header .logo {
     padding: 14px 20px 15px 35px;
-    background: #462b34;
+    background: #462B34;
     border-bottom-right-radius: 25px; }
+    @media (max-width: 26.62em) {
+      .header .logo {
+        padding: 16px; } }
     .header .logo img {
       width: 80%; }
+      @media (max-width: 26.62em) {
+        .header .logo img {
+          width: 150px; } }
   .header ul.main-nav {
     display: flex;
     width: 65%;
@@ -216,6 +216,14 @@ p {
       .header ul.main-nav a:hover {
         color: #ff5956;
         transition: ease-out 0.2s all; }
+    @media (max-width: 26.62em) {
+      .header ul.main-nav {
+        display: none; } }
+  .header p.hamburger {
+    display: none; }
+    @media (max-width: 26.62em) {
+      .header p.hamburger {
+        display: block; } }
 
 .main-nav a {
   color: #34495e;
@@ -224,9 +232,6 @@ p {
 .main-nav a:hover {
   color: #718daa; }
 
-/* ================================= 
-  Media Queries
-==================================== */
 /*--------------------------------------------------------------
 # Footer -  Contact section
 --------------------------------------------------------------*/
@@ -235,6 +240,9 @@ p {
   height: 45rem;
   width: 100%;
   position: relative; }
+  @media (max-width: 26.62em) {
+    .footer-section {
+      height: 50rem; } }
   .footer-section_bg-img {
     background-image: url("../../img/pattern-11.png");
     position: absolute;
@@ -283,6 +291,10 @@ p {
   height: 87vh;
   display: flex;
   flex-wrap: wrap; }
+  @media (max-width: 26.62em) {
+    .banner-section_wrapper {
+      height: 90vh;
+      flex-direction: column-reverse; } }
   .banner-section_wrapper_content {
     flex: 0 0 55%;
     flex-direction: column;
@@ -295,6 +307,9 @@ p {
       font-weight: 600; }
     .banner-section_wrapper_content h1 {
       line-height: 5.4rem; }
+    @media (max-width: 26.62em) {
+      .banner-section_wrapper_content {
+        padding: 12rem; } }
   .banner-section_wrapper_img {
     flex: 1 1 0;
     background-image: url("../../img/banner-1.jpg");
@@ -320,6 +335,11 @@ p {
     align-items: center;
     height: 100%;
     flex-wrap: wrap; }
+  @media (max-width: 26.62em) {
+    .client-section {
+      height: 30rem; }
+      .client-section img {
+        width: 15rem; } }
 
 /*--------------------------------------------------------------
 # Section3 -  Welcome section
@@ -361,15 +381,21 @@ p {
     .welcome-section_heading h2 {
       margin-top: 1rem;
       font-size: 3.8rem; }
+      @media (max-width: 26.62em) {
+        .welcome-section_heading h2 {
+          font-size: 3rem; } }
     .welcome-section_heading p {
       width: 40rem;
       text-align: center; }
   .welcome-section_content-wrapper {
     margin-top: 8rem;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    flex-wrap: wrap; }
     .welcome-section_content-wrapper .image {
       flex: 0 0 50%; }
+      .welcome-section_content-wrapper .image img {
+        width: 290px; }
     .welcome-section_content-wrapper .side-content {
       flex: 1; }
       .welcome-section_content-wrapper .side-content_subtext {
@@ -388,6 +414,8 @@ p {
           font-size: 2rem;
           font-weight: bold;
           color: #462B34; }
+        .welcome-section_content-wrapper .side-content_icons img {
+          height: 100%; }
         .welcome-section_content-wrapper .side-content_icons_A {
           display: flex;
           height: 100%; }
@@ -411,14 +439,26 @@ p {
     background-position: bottom center;
     z-index: -2;
     top: 423px; }
+    @media (max-width: 26.62em) {
+      .about-section_bg-img {
+        top: 224px; } }
   .about-section_content_box {
     display: flex;
     flex-direction: row;
     overflow: hidden;
     box-shadow: 0 0 20px 0 #cecece;
     border-radius: 10px; }
+    @media (max-width: 26.62em) {
+      .about-section_content_box {
+        flex-wrap: wrap; } }
     .about-section_content_box_left .image-box {
       height: 420px; }
+      @media (max-width: 26.62em) {
+        .about-section_content_box_left .image-box {
+          height: 35rem; } }
+      @media (max-width: 26.62em) {
+        .about-section_content_box_left .image-box img {
+          width: 100%; } }
     .about-section_content_box_left .inner-box {
       background-color: #462B34;
       height: 38rem;
@@ -472,16 +512,26 @@ p {
     font-size: 4rem; }
   .solutions-section p {
     padding: 0 38rem; }
+    @media (max-width: 26.62em) {
+      .solutions-section p {
+        padding: 0; } }
   .solutions-section_3boxes {
     margin-top: 5rem;
     display: flex;
     gap: 1rem; }
+    @media (max-width: 26.62em) {
+      .solutions-section_3boxes {
+        flex-direction: column;
+        gap: 10rem; } }
     .solutions-section_3boxes_box1 {
       background-image: url("../../img/service-1.jpg");
       height: 300px;
       width: 100%;
       background-repeat: no-repeat;
       position: relative; }
+      @media (max-width: 26.62em) {
+        .solutions-section_3boxes_box1 {
+          height: 200px; } }
       .solutions-section_3boxes_box1 .card {
         background-color: #fff;
         height: 150px;
@@ -491,8 +541,23 @@ p {
         position: absolute;
         top: 20rem;
         left: 9rem; }
+        @media (min-width: 120em) {
+          .solutions-section_3boxes_box1 .card {
+            top: 17rem;
+            left: 6rem; } }
+        @media (max-width: 26.62em) {
+          .solutions-section_3boxes_box1 .card {
+            height: 100px;
+            width: 180px;
+            top: 22rem; } }
         .solutions-section_3boxes_box1 .card img {
           margin-top: 3rem; }
+          @media (min-width: 120em) {
+            .solutions-section_3boxes_box1 .card img {
+              margin-top: 2rem; } }
+          @media (max-width: 26.62em) {
+            .solutions-section_3boxes_box1 .card img {
+              width: 7rem; } }
         .solutions-section_3boxes_box1 .card p {
           width: 200px;
           font-size: 2rem;
@@ -505,6 +570,9 @@ p {
       height: 300px;
       width: 100%;
       position: relative; }
+      @media (max-width: 26.62em) {
+        .solutions-section_3boxes_box2 {
+          height: 200px; } }
       .solutions-section_3boxes_box2 .card {
         background-color: #fff;
         height: 150px;
@@ -514,8 +582,23 @@ p {
         position: absolute;
         top: 20rem;
         left: 9rem; }
+        @media (min-width: 120em) {
+          .solutions-section_3boxes_box2 .card {
+            top: 17rem;
+            left: 6rem; } }
+        @media (max-width: 26.62em) {
+          .solutions-section_3boxes_box2 .card {
+            height: 100px;
+            width: 180px;
+            top: 22rem; } }
         .solutions-section_3boxes_box2 .card img {
           margin-top: 3rem; }
+          @media (min-width: 120em) {
+            .solutions-section_3boxes_box2 .card img {
+              margin-top: 2rem; } }
+          @media (max-width: 26.62em) {
+            .solutions-section_3boxes_box2 .card img {
+              width: 7rem; } }
         .solutions-section_3boxes_box2 .card p {
           width: 200px;
           font-size: 2rem;
@@ -528,6 +611,9 @@ p {
       height: 300px;
       width: 100%;
       position: relative; }
+      @media (max-width: 26.62em) {
+        .solutions-section_3boxes_box3 {
+          height: 200px; } }
       .solutions-section_3boxes_box3 .card {
         background-color: #fff;
         height: 150px;
@@ -537,8 +623,23 @@ p {
         position: absolute;
         top: 20rem;
         left: 9rem; }
+        @media (min-width: 120em) {
+          .solutions-section_3boxes_box3 .card {
+            top: 17rem;
+            left: 6rem; } }
+        @media (max-width: 26.62em) {
+          .solutions-section_3boxes_box3 .card {
+            height: 100px;
+            width: 180px;
+            top: 22rem; } }
         .solutions-section_3boxes_box3 .card img {
           margin-top: 3rem; }
+          @media (min-width: 120em) {
+            .solutions-section_3boxes_box3 .card img {
+              margin-top: 2rem; } }
+          @media (max-width: 26.62em) {
+            .solutions-section_3boxes_box3 .card img {
+              width: 7rem; } }
         .solutions-section_3boxes_box3 .card p {
           width: 200px;
           font-size: 2rem;
