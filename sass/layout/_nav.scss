@@ -2,6 +2,7 @@
 	background-color:$color-background;
     color: $color-primary;
 	display: flex;
+	flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     min-height: 13vh;
@@ -61,13 +62,41 @@
 		}
 	}
 
-	p.hamburger{
+	ul.main-nav.show{
+		@include respond(small) {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+    		padding: 0;
+			text-align: center;
+			background: #f0e6e0;
+			height: 25vh;
+			z-index: 5;
+			position: relative;
+			transition: all 1s ease-out;
+		}
+	}
+
+	#hamburger{
 		display: none;
 
 		@include respond(small) {
 			display: block;
+			margin-right: 2rem;
+			font-size: 4rem;
+			background-color: transparent;
+			color: $color-primary;
+			border: none;
+			width: 7rem;
+			cursor: pointer;
+
+		}
+
+		&:focus{
+			outline: none;
 		}
 	}
+	
 
 }
 

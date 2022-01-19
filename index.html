@@ -18,8 +18,10 @@
     <link rel="icon" href="./favicon.ico" type="image/gif" sizes="16x16">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
     
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -34,13 +36,17 @@
                 <img src="./img/logo-21.png" alt="logo">
             </a>
         </figure>
-        <ul class="main-nav">
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="main-nav show" id="nav-ul">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contacts">Contact</a></li>
         </ul>
-        <p class="hamburger">Mobile Menu</p>
+    
+        
     </header><!-- Navigation ends -->
     <!-- Main section Starts -->
     <main>
@@ -211,5 +217,6 @@
             </div>
         </footer>
     </main>
+    <script src="./js/main.js"></script>
 </body>
 </html>

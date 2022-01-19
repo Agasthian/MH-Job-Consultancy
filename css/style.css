@@ -62,7 +62,7 @@ h4,
 h5,
 h6,
 nav {
-  color: #462B34; }
+  color: #52ADA2; }
 
 h1 {
   font-size: 4rem; }
@@ -128,15 +128,15 @@ p {
 
 .btn--orange {
   color: #fff;
-  background-color: #ff5956; }
+  background-color: #fb726f; }
   .btn--orange::after {
     background-color: #fff; }
 
 .btn--nude {
   color: #fff;
-  background-color: #462B34; }
+  background-color: #52ADA2; }
   .btn--nude::after {
-    background-color: #462B34; }
+    background-color: #52ADA2; }
 
 .btn::after {
   content: '';
@@ -155,15 +155,15 @@ p {
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
-  color: #462B34;
-  border-bottom: 1px solid #462B34;
+  color: #52ADA2;
+  border-bottom: 1px solid #52ADA2;
   display: inline-block;
   text-decoration: none;
   padding: 3px;
   transition: all 0.2s; }
 
 .btn-text:hover {
-  background-color: #462B34;
+  background-color: #52ADA2;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transform: translateY(-2px); }
@@ -173,9 +173,10 @@ p {
   transform: translateY(0); }
 
 .header {
-  background-color: #fff;
-  color: #462B34;
+  background-color: #F7F8F3;
+  color: #52ADA2;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   min-height: 13vh;
@@ -189,7 +190,7 @@ p {
       min-height: 10vh; } }
   .header .logo {
     padding: 14px 20px 15px 35px;
-    background: #462B34;
+    background: #52ADA2;
     border-bottom-right-radius: 25px; }
     @media (max-width: 26.62em) {
       .header .logo {
@@ -214,16 +215,37 @@ p {
       font-size: 1.4rem;
       transition: ease-in 0.2s all; }
       .header ul.main-nav a:hover {
-        color: #ff5956;
+        color: #fb726f;
         transition: ease-out 0.2s all; }
     @media (max-width: 26.62em) {
       .header ul.main-nav {
         display: none; } }
-  .header p.hamburger {
+  @media (max-width: 26.62em) {
+    .header ul.main-nav.show {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+      background: #f0e6e0;
+      height: 25vh;
+      z-index: 5;
+      position: relative;
+      transition: all 1s ease-out; } }
+  .header #hamburger {
     display: none; }
     @media (max-width: 26.62em) {
-      .header p.hamburger {
-        display: block; } }
+      .header #hamburger {
+        display: block;
+        margin-right: 2rem;
+        font-size: 4rem;
+        background-color: transparent;
+        color: #52ADA2;
+        border: none;
+        width: 7rem;
+        cursor: pointer; } }
+    .header #hamburger:focus {
+      outline: none; }
 
 .main-nav a {
   color: #34495e;
@@ -236,7 +258,8 @@ p {
 # Footer -  Contact section
 --------------------------------------------------------------*/
 .footer-section {
-  background-color: #462b34;
+  background-color: #52ADA2;
+  color: #fff;
   height: 45rem;
   width: 100%;
   position: relative; }
@@ -263,8 +286,11 @@ p {
     gap: 4rem;
     padding-top: 10rem;
     height: 40rem;
-    color: #ae979f;
+    color: #e1e0e0;
     font-size: 1.6rem; }
+    @media (max-width: 26.62em) {
+      .footer-section_top {
+        padding-top: 4rem; } }
     .footer-section_top h4 {
       color: #fff;
       font-size: 2rem;
@@ -276,7 +302,7 @@ p {
     .footer-section_top_widget3 {
       flex: 0 0 33%; }
   .footer-section_bottom hr {
-    border: 1px solid  #ae979f; }
+    border: 1px solid  #fff; }
   .footer-section_bottom_content {
     display: flex;
     justify-content: space-between; }
@@ -302,7 +328,7 @@ p {
     padding: 0 5rem 0 20rem;
     background-image: url("../../img/pattern-1.png"); }
     .banner-section_wrapper_content .sub_heading {
-      color: #ff5956;
+      color: #fb726f;
       text-transform: uppercase;
       font-weight: 600; }
     .banner-section_wrapper_content h1 {
@@ -328,7 +354,7 @@ p {
 .client-section {
   height: 15rem;
   width: 100%;
-  background-color: #462B34; }
+  background-color: #52ADA2; }
   .client-section_flex-wrapper {
     display: flex;
     justify-content: space-evenly;
@@ -352,7 +378,7 @@ p {
     align-items: center;
     flex-direction: column; }
     .welcome-section_heading_subtext {
-      color: #ff5956;
+      color: #fb726f;
       text-transform: uppercase;
       font-weight: 600;
       position: relative;
@@ -399,7 +425,7 @@ p {
     .welcome-section_content-wrapper .side-content {
       flex: 1; }
       .welcome-section_content-wrapper .side-content_subtext {
-        color: #ff5956;
+        color: #fb726f;
         text-transform: uppercase;
         font-weight: 600; }
       .welcome-section_content-wrapper .side-content h3 {
@@ -413,7 +439,7 @@ p {
         .welcome-section_content-wrapper .side-content_icons p {
           font-size: 2rem;
           font-weight: bold;
-          color: #462B34; }
+          color: #52ADA2; }
         .welcome-section_content-wrapper .side-content_icons img {
           height: 100%; }
         .welcome-section_content-wrapper .side-content_icons_A {
@@ -460,7 +486,7 @@ p {
         .about-section_content_box_left .image-box img {
           width: 100%; } }
     .about-section_content_box_left .inner-box {
-      background-color: #462B34;
+      background-color: #52ADA2;
       height: 38rem;
       display: flex;
       justify-content: center;
@@ -492,7 +518,7 @@ p {
 --------------------------------------------------------------*/
 .solutions-section {
   margin-top: 10rem;
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
   position: relative;
   text-align: center; }
   .solutions-section_bg-img {
@@ -507,6 +533,9 @@ p {
     width: 100%;
     height: 400px;
     z-index: -2; }
+    @media (max-width: 26.62em) {
+      .solutions-section_bg-img {
+        display: none; } }
   .solutions-section h2 {
     margin: 1rem 0;
     font-size: 4rem; }
@@ -563,7 +592,7 @@ p {
           font-size: 2rem;
           font-weight: 700;
           padding: 0;
-          color: #462B34; }
+          color: #52ADA2; }
     .solutions-section_3boxes_box2 {
       background-image: url("../../img/service-2.jpg");
       background-repeat: no-repeat;
@@ -604,7 +633,7 @@ p {
           font-size: 2rem;
           font-weight: 700;
           padding: 0;
-          color: #462B34; }
+          color: #52ADA2; }
     .solutions-section_3boxes_box3 {
       background-image: url("../../img/service-3.jpg");
       background-repeat: no-repeat;
@@ -645,7 +674,7 @@ p {
           font-size: 2rem;
           font-weight: 700;
           padding: 0;
-          color: #462B34; }
+          color: #52ADA2; }
 
 /*--------------------------------------------------------------
 # section 6 -  Contact section
