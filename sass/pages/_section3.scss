@@ -28,6 +28,10 @@
                 z-index: -1;
                 bottom: -1rem;
                 left: -2rem;
+                @include respond(small) {
+                    height: 40px;
+                    width: 40px;
+                }
             }
 
             &:after{
@@ -41,6 +45,10 @@
                 z-index: 0;
                 bottom: 2.5rem;
                 left: 1.5rem;
+
+                @include respond(small){
+                    bottom: 3rem;
+                }
             }
         }
         h2{
@@ -63,9 +71,12 @@
         .image{
             flex: 0 0 50%;
 
-            img{
-                width: 290px;
+            @include respond(small) {
+                img{
+                    width: 290px;
+                }
             }
+
         }
         .side-content{
             flex:1;
