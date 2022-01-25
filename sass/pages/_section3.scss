@@ -76,6 +76,16 @@
                     width: 290px;
                 }
             }
+            @include respond(large) {
+                img{
+                    width: 470px;
+                }
+            }
+            @include respond(larger) {
+                img{
+                    width: 600px;
+                }
+            }
 
         }
         .side-content{

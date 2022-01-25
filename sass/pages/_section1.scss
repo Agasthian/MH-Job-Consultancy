@@ -15,11 +15,10 @@
         }
 
         &_content{
-            flex: 0 0 55%;
+            flex: 0 0 45%;
             flex-direction: column;
             align-items: flex-start;
             padding: 0 5rem 0 20rem;
-            background-image: url('../../img/pattern-1.png');
 
             .sub_heading{
                 color:$color-secondary;
@@ -36,17 +35,9 @@
         }
         &_img{
             flex: 1 1 0;
-            background-image: url('../../img/banner-1.jpg');
-            background-size: cover;
-            background-position:center;
-
-            img{
-                width: 520px;
-                height: auto;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-            }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }   
     }
 }

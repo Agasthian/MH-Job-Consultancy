@@ -176,6 +176,7 @@ p {
   transform: translateY(0); }
 
 .header {
+  position: relative;
   background-color: #F7F8F3;
   color: #52ADA2;
   display: flex;
@@ -325,11 +326,10 @@ p {
       height: 90vh;
       flex-direction: column-reverse; } }
   .banner-section_wrapper_content {
-    flex: 0 0 55%;
+    flex: 0 0 45%;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 5rem 0 20rem;
-    background-image: url("../../img/pattern-1.png"); }
+    padding: 0 5rem 0 20rem; }
     .banner-section_wrapper_content .sub_heading {
       color: #fb726f;
       text-transform: uppercase;
@@ -341,15 +341,9 @@ p {
         padding: 12rem; } }
   .banner-section_wrapper_img {
     flex: 1 1 0;
-    background-image: url("../../img/banner-1.jpg");
-    background-size: cover;
-    background-position: center; }
-    .banner-section_wrapper_img img {
-      width: 520px;
-      height: auto;
-      position: absolute;
-      bottom: 0;
-      right: 0; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 /*--------------------------------------------------------------
 # Section2 - Client section
@@ -433,6 +427,12 @@ p {
       @media (max-width: 26.62em) {
         .welcome-section_content-wrapper .image img {
           width: 290px; } }
+      @media (min-width: 85.37em) {
+        .welcome-section_content-wrapper .image img {
+          width: 470px; } }
+      @media (min-width: 90em) {
+        .welcome-section_content-wrapper .image img {
+          width: 600px; } }
     .welcome-section_content-wrapper .side-content {
       flex: 1; }
       .welcome-section_content-wrapper .side-content_subtext {
