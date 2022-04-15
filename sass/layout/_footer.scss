@@ -5,7 +5,7 @@
 
 .footer-section{
     background-color:$color-primary;
-    color: #fff;
+    
     height: 45rem;
     width: 100%;
     position: relative;
@@ -33,10 +33,9 @@
         display: flex;
         justify-content: space-evenly;
         align-items: flex-start;
-        gap: 4rem;
         padding-top: 10rem;
         height: 40rem;
-        color: $color-text-secondary;
+        color: $color-text-primary;
         font-size: 1.6rem;
 
         @include respond(small){
@@ -44,7 +43,7 @@
         }
         
         h4{
-            color: #fff;
+            color: #111;
             font-size: 2rem;
             font-weight: 700;
         }
@@ -62,7 +61,7 @@
 
     &_bottom{
         hr{
-            border:1px solid  #fff;
+            border:1px solid  #333;
         }
         &_content{
             display: flex;

@@ -10,7 +10,7 @@
         position: absolute;
         height: 300px;
         width: 100%;
-        background-image: url('../../img/pattern-5.png');    
+        background-image: url('../../img/PatterNew5.png');    
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom center;
@@ -36,7 +36,7 @@
         &_left{
 
             .image-box{
-                height: 420px;
+                height: 490px;
                 @include respond(small) {
                     height: 35rem;
                 }
@@ -76,10 +76,10 @@
         }
 
         &_right{
-            padding: 10rem 7rem;
+            padding: 6rem;
             background-color: #fff;
             h2{
-                margin: 2rem 0;
+                margin: 0rem 0px 2rem 0;
                 font-size: 3rem;
             }
 
