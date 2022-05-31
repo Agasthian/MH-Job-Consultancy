@@ -6,13 +6,9 @@
 .footer-section{
     background-color:$color-primary;
     
-    height: 45rem;
+    min-height: 45rem;
     width: 100%;
     position: relative;
-
-    @include respond(small) {
-        height: 50rem;
-    }
 
     &_bg-img{
         background-image: url('../../img/pattern-11.png');
@@ -31,15 +27,15 @@
 
     &_top{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
-        align-items: flex-start;
+        align-items: center;
         padding-top: 10rem;
-        height: 40rem;
         color: $color-text-primary;
         font-size: 1.6rem;
 
         @include respond(small){
-            padding-top: 4rem;
+            padding: 4rem 0;
         }
         
         h4{
@@ -49,13 +45,13 @@
         }
 
         &_widget1{
-            flex: 0 0 33%;
+            flex: 1 0 33%;
         }
         &_widget2{
-            flex: 0 0 33%;
+            flex: 1 0 33%;
         }
         &_widget3{
-            flex: 0 0 33%;
+            flex: 1 0 33%;
         }
     }
 

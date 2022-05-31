@@ -2,7 +2,8 @@
 # Section2 - Client section
 --------------------------------------------------------------*/
 .client-section{
-    height:15rem;
+    min-height: 15rem;
+    padding: 2rem;
     width:100%;
     background-color: $color-primary;
 

@@ -66,30 +66,35 @@
     &_content-wrapper{
         margin-top: 3rem;
         display: flex;
+        gap:2rem;
         flex-direction: row;
         flex-wrap: wrap;
         .image{
-            flex: 0 0 55%;
+            
+            flex: 1 1 48%;
 
-            @include respond(small) {
-                img{
-                    width: 290px;
-                }
+            img{
+                width:100%
             }
-            @include respond(large) {
-                img{
-                    width: 550px;
-                }
-            }
-            @include respond(larger) {
-                img{
-                    width: 600px;
-                }
-            }
+            // @include respond(small) {
+            //     img{
+            //         width: 290px;
+            //     }
+            // }
+            // @include respond(large) {
+            //     img{
+            //         width: 550px;
+            //     }
+            // }
+            // @include respond(larger) {
+            //     img{
+            //         width: 600px;
+            //     }
+            // }
 
         }
         .side-content{
-            flex:1;
+            flex:1 1 50%;
 
             &_subtext{
                 color: $color-secondary;

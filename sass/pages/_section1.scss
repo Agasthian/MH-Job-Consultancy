@@ -4,18 +4,37 @@
 /* Nav css imported from - layout/nav.scss*/
 
 .banner-section{
-
+    
     &_wrapper{
         height: 87vh;
         display: flex;
         flex-wrap: wrap;
+       
         @include respond(small) {
             height: 90vh;
             flex-direction: column-reverse;
         }
+       
+        // @include respond(small) {
+        //     background-color: pink;
+        // }
+        // @include respond(medium) {
+        //     background-color: green;
+        // }
+        // @include respond(tab-port) {
+        //     background-color: yellow;
+            
+        // }
+        // @include respond(tab) {
+        //     background-color: red;
+            
+        // }
+        // @include respond(tab-land) {
+        //     background-color: blue;
+        // }
 
         &_content{
-            flex: 0 0 45%;
+            flex: 1 1 45%;
             flex-direction: column;
             align-items: flex-start;
             padding: 0px 7rem 0 10rem;
@@ -29,15 +48,26 @@
                 line-height: 5.4rem;
             }
 
-            @include respond(small) {
-                padding: 12rem;
+            @include respond(tab-port) {
+                padding: 2rem 12rem;
+
+                h1{
+                    line-height: 4rem;
+                }
             }
         }
         &_img{
-            flex: 1 1 0;
+            
+            flex: 1 1 55%;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            background: url('../../img/1.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+            @include respond(tab-port) {
+
+            }
         }   
     }
 }

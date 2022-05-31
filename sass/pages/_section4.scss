@@ -24,7 +24,7 @@
         
     &_content_box{
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         overflow: hidden;
         box-shadow: 0 0 20px 0 #cecece;
         border-radius: 10px;
@@ -35,23 +35,20 @@
 
         &_left{
 
+            flex: 1 1 55%;
+            display: flex;
+            flex-direction: column;
+
             .image-box{
-                height: 490px;
-                @include respond(small) {
-                    height: 35rem;
-                }
-
-                
                 img{
-                    @include respond(small) {
-                        width: 100%;
-                    }
-
+                    width: 100%;
+                    height: 100%;
                 }
             }
             .inner-box{
                 background-color: $color-primary;
-                height:38rem;
+                height:100%;
+                padding:4rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -76,6 +73,7 @@
         }
 
         &_right{
+            flex: 1 1 45%;
             padding: 6rem;
             background-color: #fff;
             h2{

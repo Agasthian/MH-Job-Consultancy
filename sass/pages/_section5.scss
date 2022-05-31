@@ -32,9 +32,10 @@
     h2{
         margin: 1rem 0;
         font-size: 4rem;
+
     }
     p{
-        padding: 0 38rem;
+        padding: 0 2%;
         @include respond(small) {
             padding: 0;
         }
@@ -45,6 +46,8 @@
         margin-top: 5rem;
         display: flex;
         gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         @include respond(small) {
             flex-direction: column;
             gap: 10rem;
@@ -93,6 +96,7 @@
 
         &_box1{
             background-image: url('../../img/6.webp');
+            margin-bottom: 10rem;
             height: 200px;
             width: 250px;
             border-radius: 5px;
@@ -109,6 +113,7 @@
         &_box2{
             background-image: url('../../img/7.jpg');
             background-repeat: no-repeat;
+            margin-bottom: 10rem;
             height: 200px;
             width: 250px;
             border-radius: 5px;
@@ -124,6 +129,7 @@
         &_box3{
             background-image: url('../../img/8.jpg');
             background-repeat: no-repeat;
+            margin-bottom: 10rem;
             height: 200px;
             width: 250px;
             position: relative;
@@ -138,6 +144,7 @@
         &_box4{
             background-image: url('../../img/9.jpg');
             background-repeat: no-repeat;
+            margin-bottom: 10rem;
             height: 200px;
             width: 250px;
             border-radius: 5px;

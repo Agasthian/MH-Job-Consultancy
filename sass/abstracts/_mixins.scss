@@ -33,42 +33,48 @@ $breakpoint argument choices:
     }
   }
   @if ($breakpoint == medium) {
-    @media (min-width: 26.68em) {
-      //427px (427px/16)
+    @media (max-width: 26.625em) {
+      //426px (426px/16) /* styles for browsers larger than 426 px; */
       @content;
     }
   }
   @if ($breakpoint == tab-port) {
     @media (max-width: 48em) {
-      // 768px (768px/16) tab - inbetween
+      // 768px (768px/16) tab - /* styles for browsers upto than 768px; */
+      @content;
+    }
+  }
+  @if ($breakpoint == tab) {
+    @media (min-width: 48.06em) {
+      // 768px (768px/16) tab - inbetween 768 and 1024
       @content;
     }
   }
 
   @if ($breakpoint == tab-land) {
     @media (min-width: 64em) {
-      //1024px (1024px/16 ) - ipad -portrait
+      //1024px (1024px/16 ) - ipad -portrait  /* styles for browsers larger than 1024px; */
       @content;
     }
   }
 
   @if ($breakpoint == large) {
-    @media (min-width: 85.37em) {
-      // 1366px (1366px/16)
+    @media (min-width: 85em) {
+      // 1366px (1366px/16) /* styles for browsers larger than 1366 px; */
       @content;
     }
   }
 
   @if ($breakpoint == larger) {
     @media (min-width: 90em) {
-      //1440px (1440/16 )
+      //1440px (1440/16 ) /* styles for browsers larger than 1440px; */
       @content;
     }
   }
 
   @if ($breakpoint == largest) {
     @media (min-width: 120em) {
-      // max-width: 1920px (1920/16)
+      // max-width: 1920px (1920/16) /* styles for browsers larger than 1920px; */
       @content;
     }
   }
