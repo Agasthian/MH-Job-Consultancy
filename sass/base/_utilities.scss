@@ -28,3 +28,10 @@
     display:flex;
     flex-wrap:wrap;
 }
+
+/********* Micro heading***************/
+.micro-heading{
+    color: $color-secondary;
+    text-transform: uppercase;
+    font-weight: 600;
+}

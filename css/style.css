@@ -67,8 +67,12 @@ nav {
 h1 {
   font-size: 4rem; }
 
+h2 {
+  font-size: 3rem; }
+
 p {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  text-align: justify; }
 
 /*********** Container ***********/
 .container {
@@ -96,6 +100,12 @@ p {
 .flex-wrapper {
   display: flex;
   flex-wrap: wrap; }
+
+/********* Micro heading***************/
+.micro-heading {
+  color: #ac1f2d;
+  text-transform: uppercase;
+  font-weight: 600; }
 
 .btn, .btn:link, .btn:visited {
   font-size: 1.4rem;
@@ -270,6 +280,8 @@ p {
   min-height: 45rem;
   width: 100%;
   position: relative; }
+  .footer-section p {
+    text-align: left; }
   .footer-section_bg-img {
     background-image: url("../../img/pattern-11.png");
     position: absolute;
@@ -329,10 +341,6 @@ p {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px 7rem 0 10rem; }
-    .banner-section_wrapper_content .sub_heading {
-      color: #ac1f2d;
-      text-transform: uppercase;
-      font-weight: 600; }
     .banner-section_wrapper_content h1 {
       line-height: 5.4rem; }
     @media (max-width: 48em) {
@@ -449,7 +457,8 @@ p {
         .welcome-section_content-wrapper .side-content_icons p {
           font-size: 2rem;
           font-weight: bold;
-          color: #f4bf44; }
+          color: #f4bf44;
+          text-align: left; }
         .welcome-section_content-wrapper .side-content_icons img {
           height: 100%; }
         .welcome-section_content-wrapper .side-content_icons_A {
@@ -461,6 +470,44 @@ p {
 
 /*--------------------------------------------------------------
 # Section4 - About section
+--------------------------------------------------------------*/
+.itServices-section {
+  background: url("../../img/bg1new.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: 5rem; }
+  .itServices-section-flxWrapper {
+    display: flex; }
+    .itServices-section-flxWrapper_left {
+      padding: 3rem 5rem;
+      flex: 1 1 60%; }
+    .itServices-section-flxWrapper_right {
+      background: url("../../img/5.webp") no-repeat;
+      background-position: center;
+      flex: 1 1 40%; }
+  .itServices-section p {
+    margin-bottom: 2rem; }
+
+/*--------------------------------------------------------------
+# Section5 -  section
+--------------------------------------------------------------*/
+.nonitServices-section {
+  height: 80vh;
+  margin-top: 10rem;
+  display: flex; }
+  .nonitServices-section_left {
+    flex: 1 1 40%;
+    background: url("../../img/6.webp") no-repeat;
+    background-position: right; }
+  .nonitServices-section_right {
+    flex: 1 1 60%;
+    padding: 4rem 5rem; }
+  .nonitServices-section p {
+    margin-bottom: 2rem; }
+
+/*--------------------------------------------------------------
+# section 6 -   About section
 --------------------------------------------------------------*/
 .about-section {
   margin-top: 15rem;
@@ -534,7 +581,7 @@ p {
           font-size: 1.8rem; }
 
 /*--------------------------------------------------------------
-# Section5 -  section
+# Section7 -  section
 --------------------------------------------------------------*/
 .solutions-section {
   margin-top: 10rem;
@@ -610,7 +657,8 @@ p {
         font-weight: 700;
         padding: 0;
         color: #f4bf44;
-        line-height: 2.5rem; }
+        line-height: 2.5rem;
+        text-align: center; }
     .solutions-section_4boxes_box1 {
       background-image: url("../../img/6.webp");
       margin-bottom: 10rem;
@@ -663,7 +711,3 @@ p {
       @media (max-width: 26.62em) {
         .solutions-section_4boxes_box4 {
           height: 200px; } }
-
-/*--------------------------------------------------------------
-# section 6 -  Contact section
---------------------------------------------------------------*/

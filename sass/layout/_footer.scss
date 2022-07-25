@@ -5,10 +5,12 @@
 
 .footer-section{
     background-color:$color-primary;
-    
     min-height: 45rem;
     width: 100%;
     position: relative;
+    p{
+        text-align: left;
+    }
 
     &_bg-img{
         background-image: url('../../img/pattern-11.png');

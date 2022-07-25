@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- Font-awesome -->
     <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -53,8 +53,8 @@
         <!-- Section 1 -->
         <section class="banner-section" id='home'>
             <div class="banner-section_wrapper">
-                <div class="banner-section_wrapper_content center-align">
-                    <span class="sub_heading">
+                <div class="banner-section_wrapper_content center-align" data-aos="fade-up" data-aos-duration="2000">
+                    <span class="micro-heading">
                         Engaged with Staffing
                     </span>
                     <h1>Partnering You for Your Human Resource Require.</h1>
@@ -65,7 +65,7 @@
                         Learn More
                     </div>
                 </div>
-                <div class="banner-section_wrapper_img">
+                <div class="banner-section_wrapper_img" data-aos="fade-left" data-aos-duration="2300">
                     <!-- <img src="./img/1.jpg" alt=""> -->
                 </div>
             </div>
@@ -83,7 +83,8 @@
         </section>
 
         <!-- Section 3 -->
-        <section class="welcome-section container" id="about">
+        
+        <section  class="welcome-section container" id="about" data-aos="fade-up" data-aos-duration="2000">
             <div class="welcome-section_heading center-align">
                 <span class="welcome-section_heading_subtext">Mordern Day Staffing Firm</span>
                 <h2> About Morpheus Hunt Consulting Company </h2>
@@ -94,7 +95,7 @@
                     <img src="./img/3.webp" alt="Welcome image for MH Consultancy">
                 </div>
                 <div class="side-content">
-                    <span class="side-content_subtext">Find the right employees</span>
+                    <span class="micro-heading">Find the right employees</span>
                     <h3>Hire Your Next Candidate with Morpheus Hunt</h3>
                     <p>Morpheus Hunt Consulting Company is a staffing and consulting
                         company. We have been immensely successful in creating a global
@@ -104,7 +105,7 @@
                         extremely talented individuals has become ever more challenging.
                         Here is where Morpheus Hunt Consulting Company comes into play
                         to bring the bestsuited talent for your company.</p> 
-                    <div class="side-content_icons">
+                    <div class="side-content_icons"  data-aos="fade-up" data-aos-duration="2000">
                         <div class="side-content_icons_A">
                             <img src="./img/icon-1.png" alt="icon_heading-1">
                             <p>Understand Your needs</p>
@@ -117,9 +118,53 @@
                 </div>
             </div>
         </section>
+        
+
 
         <!-- Section 4 -->
-        <section class="about-section" >
+        <section class="itServices-section" data-aos="fade-up"  data-aos-delay="500" data-aos-duration="2000">  
+            <div class="itServices-section-flxWrapper container">
+                <div class="itServices-section-flxWrapper_left">
+                    <span class="micro-heading">Trusted Employees</span>
+                    <h2>IT Recruitment Services</h2>
+                    <p>IT skills are one of the most demanded ones in today’s connected world. Skilled manpower is required both in IT industry as well as in IT function of core industries. We at ScopeHR specialize in providing best IT resources in various domains that can be productive from day one and thus can assist your business in delivering critical milestones on time.</p>
+                    <p>We have expetise in working for & closing positions in the following skillsets Java, .Net, React, iOS Developers, Android Developers, Manual & Automation Testing, Big Data, Devops, Cloudops, Block Chain, MEAN & MERN stack, Web Development, Angular, Mobile Application development, Php framework & IT support services etc.</p>
+                    
+                    <ul>
+                        <li>Headhunting as the primary mode of spotting potential candidates.</li>
+                        <li>Experienced recruiters team for leadership hiring.</li>
+                        <li>Expertise in catering to the most niche positions.</li>
+                        <li>Time-bound hiring approach, most fitting CVs.</li>
+                        <li>Savvy in hiring through headhunting, Professional & Social networks</li>
+                    </ul>
+                </div>
+                <div class="itServices-section-flxWrapper_right">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Section 5 -->
+        <section class="nonitServices-section container" data-aos="fade-up" data-aos-duration="2000">            
+            <div class="nonitServices-section_left">
+            </div>
+            <div class="nonitServices-section_right">
+                <span class="micro-heading">Trusted Employees</span>
+                <h2>Non-IT Recruitment Services</h2>
+
+                <p>Non IT Recruitment requires a lot of understanding of various domains and industry expertise in hiring resources. We are catering to a wide range of Non-IT Industries. We have industry specialist recruiters who work on your recruitments.</p>
+                <p>We have demonstrated track record for recruiting for various industries such us Automobile, Process Industry, Manufacturing, Chemicals, Power, Real Estate, Infra, Education, Logistics, Aerospace, Telecom, Pharma, Healthcare, Hospitality, Banking & BSFI, etc.</p>
+                <ul>
+                    <li>Headhunting as the primary mode of spotting potential candidates.</li>
+                    <li>Experienced recruiters team for leadership hiring.</li>
+                    <li>Expertise in catering to the most niche positions.</li>
+                    <li>Time-bound hiring approach, most fitting CVs.</li>
+                    <li>Savvy in hiring through headhunting, Professional & Social networks</li>
+                </ul>
+
+            </div>
+        </section>
+        <!-- Section 6 -->
+        <section class="about-section"  data-aos="fade-up" data-aos-duration="2000">
             <div class="about-section_bg-img">
 
             </div>
@@ -129,7 +174,7 @@
                         <div class="image-box">
                             <img src="./img/2new.jpg" alt="About">
                         </div>
-                        <div class="inner-box">
+                        <div class="inner-box"  data-aos="fade-up" data-aos-duration="2000">
                             <img src="./img/icon-3.png" alt="icon 3">
                             <h3>Educational Resource for Job Seekers</h3>
                             <div class="btn btn--orange">
@@ -152,8 +197,8 @@
         
         </section>
 
-        <!-- Section  5-->
-        <section class="solutions-section" id="solutions" id="solutions">
+        <!-- Section  7-->
+        <section class="solutions-section" id="solutions"  data-aos="fade-up" data-aos-duration="2000">
             <div class="solutions-section_bg-img">
 
             </div>
@@ -233,6 +278,7 @@
             </div>
         </footer>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
