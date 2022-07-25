@@ -10,18 +10,33 @@
     margin-top: 5rem;
     
     &-flxWrapper{
-        display: flex;   
+        display: flex; 
+        
+        @include respond(small) {
+            flex-direction: column;
+        }
 
         &_left{
            
            padding: 3rem 5rem;
            flex: 1 1 60%;
+           
+           @include respond(small) {
+            // flex: 1 1 100%;
+            padding: 3rem 0;
+           }
+
     
         }
         &_right{
             background: url('../../img/5.webp') no-repeat;
             background-position: center;
             flex: 1 1 40%;
+
+            @include respond(small) {
+                // flex: 1 1 100%;
+            }
+        
         }
     }
 

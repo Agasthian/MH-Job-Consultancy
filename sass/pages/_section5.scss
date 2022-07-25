@@ -7,6 +7,9 @@
     height: 80vh;
     margin-top: 10rem;
     display: flex;
+    @include respond(small) {
+        flex-direction: column;
+    }
 
     &_left{
         flex: 1 1 40%;

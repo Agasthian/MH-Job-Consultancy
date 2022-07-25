@@ -479,9 +479,15 @@ p {
   margin-top: 5rem; }
   .itServices-section-flxWrapper {
     display: flex; }
+    @media (max-width: 26.62em) {
+      .itServices-section-flxWrapper {
+        flex-direction: column; } }
     .itServices-section-flxWrapper_left {
       padding: 3rem 5rem;
       flex: 1 1 60%; }
+      @media (max-width: 26.62em) {
+        .itServices-section-flxWrapper_left {
+          padding: 3rem 0; } }
     .itServices-section-flxWrapper_right {
       background: url("../../img/5.webp") no-repeat;
       background-position: center;
@@ -496,6 +502,9 @@ p {
   height: 80vh;
   margin-top: 10rem;
   display: flex; }
+  @media (max-width: 26.62em) {
+    .nonitServices-section {
+      flex-direction: column; } }
   .nonitServices-section_left {
     flex: 1 1 40%;
     background: url("../../img/6.webp") no-repeat;
