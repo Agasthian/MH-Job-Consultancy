@@ -36,6 +36,7 @@
     }
     p{
         padding: 0 2%;
+        text-align: center;
         @include respond(small) {
             padding: 0;
         }

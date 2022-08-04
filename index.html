@@ -23,6 +23,8 @@
     <!-- Font-awesome -->
     <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -31,27 +33,29 @@
     ---------------------------------------------------------------->
     <!-- Navigation Start -->
     <header class="header">
-        <figure class="logo">
-            <a href="/">
-                <img src="./img/Logo-web-2.png" alt="logo">
-            </a>
-        </figure>
-        <button class="hamburger" id="hamburger">
-            <i class="fas fa-bars"></i>
-        </button>
-        <ul class="main-nav show" id="nav-ul">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="header-flex_wrappr">
+            <figure class="logo">
+                <a href="/">
+                    <img src="./img/Logo-web-2.png" alt="logo">
+                </a>
+            </figure>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="main-nav show" id="nav-ul">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     
         
     </header><!-- Navigation ends -->
     <!-- Main section Starts -->
     <main>
         <!-- Section 1 -->
-        <section class="banner-section" id='home'>
+        <!-- <section class="banner-section" id='home'>
             <div class="banner-section_wrapper">
                 <div class="banner-section_wrapper_content center-align" data-aos="fade-up" data-aos-duration="2000">
                     <span class="micro-heading">
@@ -66,35 +70,93 @@
                     </div>
                 </div>
                 <div class="banner-section_wrapper_img" data-aos="fade-left" data-aos-duration="2300">
-                    <!-- <img src="./img/1.jpg" alt=""> -->
+                     <img src="./img/1.jpg" alt="">
                 </div>
             </div>
+        </section> -->
+    
+    <section class="landing">
+                <!-- Swiper -->
+
+    <div class="swiper bg-slider" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide dark-layer">
+        <img src="./img/slide1.jpg" />
+        <div class="text-content">
+            <h2 class="title">Title 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe vitae officia minima velit optio totam! Aliquam id, recusandae aliquid veritatis minus sequi quo. Quia, fuga. Alias quam officiis quibusdam quod. </p>
+            <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="swiper-slide dark-layer">
+        <img src="./img/slide2.jpg" />
+        <div class="text-content">
+            <h2 class="title">Title 2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe vitae officia minima velit optio totam! Aliquam id, recusandae aliquid veritatis minus sequi quo. Quia, fuga. Alias quam officiis quibusdam quod. </p>
+            <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="swiper-slide dark-layer">
+        <img src="./img/slide3.jpg" />
+        <div class="text-content">
+            <h2 class="title">Title 3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe vitae officia minima velit optio totam! Aliquam id, recusandae aliquid veritatis minus sequi quo. Quia, fuga. Alias quam officiis quibusdam quod. </p>
+            <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="swiper-slide dark-layer">
+        <img src="./img/slide4.jpg" />
+        <div class="text-content">
+            <h2 class="title">Title 4</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe vitae officia minima velit optio totam! Aliquam id, recusandae aliquid veritatis minus sequi quo. Quia, fuga. Alias quam officiis quibusdam quod. </p>
+            <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+        </div>
+      </div>
+
+    </div>
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+  </div>
+  <div class="bg-slider-thumbs">
+    <div class="swiper-wrapper thumbs-container">
+        <img src="./img/slide1.jpg" class="swiper-slide" alt=''/>
+        <img src="./img/slide2.jpg" class="swiper-slide" alt=''/>
+        <img src="./img/slide3.jpg" class="swiper-slide" alt=''/>
+        <img src="./img/slide4.jpg" class="swiper-slide" alt=''/>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
         </section>
 
         <!-- Section 2 -->
         <section class="client-section">
             <div class="client-section_flex-wrapper">
-                <img src="./img/clients-logo-1.png" alt="Client">
-                <img src="./img/clients-logo-2.png" alt="Client 2">
-                <img src="./img/clients-logo-3.png" alt="Client 3">
-                <img src="./img/clients-logo-4.png" alt="Client 4">
-                <img src="./img/clients-logo-5.png" alt="Client 5">
+                <img src="./img/clients-logo-1.png" alt="Client" data-aos="fade-right" data-aos-duration="2000">
+                <img src="./img/clients-logo-2.png" alt="Client 2" data-aos="fade-right" data-aos-duration="2000">
+                <img src="./img/clients-logo-3.png" alt="Client 3" data-aos="fade" data-aos-duration="2000" data-aos-delay="200">
+                <img src="./img/clients-logo-4.png" alt="Client 4"data-aos="fade-left" data-aos-duration="2000">
+                <img src="./img/clients-logo-5.png" alt="Client 5"data-aos="fade-left" data-aos-duration="2000">
             </div>
         </section>
 
         <!-- Section 3 -->
         
-        <section  class="welcome-section container" id="about" data-aos="fade-up" data-aos-duration="2000">
+        <section  class="welcome-section container">
+            <div id="about">
+
+            
             <div class="welcome-section_heading center-align">
                 <span class="welcome-section_heading_subtext">Mordern Day Staffing Firm</span>
                 <h2> About Morpheus Hunt Consulting Company </h2>
                 
             </div>
             <div class="welcome-section_content-wrapper">
-                <div class="image">
+                <div class="image" data-aos="fade-left" data-aos-duration="1700">
                     <img src="./img/3.webp" alt="Welcome image for MH Consultancy">
                 </div>
-                <div class="side-content">
+                <div class="side-content" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400">
                     <span class="micro-heading">Find the right employees</span>
                     <h3>Hire Your Next Candidate with Morpheus Hunt</h3>
                     <p>Morpheus Hunt Consulting Company is a staffing and consulting
@@ -105,7 +167,7 @@
                         extremely talented individuals has become ever more challenging.
                         Here is where Morpheus Hunt Consulting Company comes into play
                         to bring the bestsuited talent for your company.</p> 
-                    <div class="side-content_icons"  data-aos="fade-up" data-aos-duration="2000">
+                    <div class="side-content_icons" >
                         <div class="side-content_icons_A">
                             <img src="./img/icon-1.png" alt="icon_heading-1">
                             <p>Understand Your needs</p>
@@ -117,14 +179,15 @@
                     </div>
                 </div>
             </div>
+        </div>
         </section>
         
 
 
         <!-- Section 4 -->
-        <section class="itServices-section" data-aos="fade-up"  data-aos-delay="500" data-aos-duration="2000">  
+        <section class="itServices-section" >  
             <div class="itServices-section-flxWrapper container">
-                <div class="itServices-section-flxWrapper_left">
+                <div class="itServices-section-flxWrapper_left" data-aos="fade-right"   data-aos-duration="2000"  data-aos-delay="700">
                     <span class="micro-heading">Trusted Employees</span>
                     <h2>IT Recruitment Services</h2>
                     <p>IT skills are one of the most demanded ones in today’s connected world. Skilled manpower is required both in IT industry as well as in IT function of core industries. We at ScopeHR specialize in providing best IT resources in various domains that can be productive from day one and thus can assist your business in delivering critical milestones on time.</p>
@@ -138,16 +201,16 @@
                         <li>Savvy in hiring through headhunting, Professional & Social networks</li>
                     </ul>
                 </div>
-                <div class="itServices-section-flxWrapper_right">
+                <div class="itServices-section-flxWrapper_right" data-aos="fade-right"  data-aos-duration="2000" data-aos-delay="400">
                     <img src="" alt="">
                 </div>
             </div>
         </section>
         <!-- Section 5 -->
-        <section class="nonitServices-section container" data-aos="fade-up" data-aos-duration="2000">            
-            <div class="nonitServices-section_left">
+        <section class="nonitServices-section container">            
+            <div class="nonitServices-section_left"  data-aos="fade-left" data-aos-duration="2000">
             </div>
-            <div class="nonitServices-section_right">
+            <div class="nonitServices-section_right"  data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400">
                 <span class="micro-heading">Trusted Employees</span>
                 <h2>Non-IT Recruitment Services</h2>
 
@@ -164,17 +227,17 @@
             </div>
         </section>
         <!-- Section 6 -->
-        <section class="about-section"  data-aos="fade-up" data-aos-duration="2000">
+        <section class="about-section" >
             <div class="about-section_bg-img">
 
             </div>
             <div class="container">
-                <div class="about-section_content_box">
+                <div class="about-section_content_box" data-aos="fade-right" data-aos-duration="2000">
                     <div class="about-section_content_box_left">
                         <div class="image-box">
                             <img src="./img/2new.jpg" alt="About">
                         </div>
-                        <div class="inner-box"  data-aos="fade-up" data-aos-duration="2000">
+                        <div class="inner-box">
                             <img src="./img/icon-3.png" alt="icon 3">
                             <h3>Educational Resource for Job Seekers</h3>
                             <div class="btn btn--orange">
@@ -198,42 +261,44 @@
         </section>
 
         <!-- Section  7-->
-        <section class="solutions-section" id="solutions"  data-aos="fade-up" data-aos-duration="2000">
+        <section class="solutions-section" id="solutions">
             <div class="solutions-section_bg-img">
 
             </div>
-            <div class="container">
+            <div class="container" >
+                <div>
                 <span class="welcome-section_heading_subtext"> Perfect Staffing Solutions</span>
                 <h2> Solutions We provide </h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ullam explicabo natus non aperiam totam </p>
                 <div class="solutions-section_4boxes">
-                    <div class="solutions-section_4boxes_box1">
+                    <div class="solutions-section_4boxes_box1"  data-aos="fade-left" data-aos-duration="2000">
                         <div class="card">
                             <img src="./img/icon-4.png" alt="icon 4"/>
                             <p>HR Consulting services
                             </p>
                         </div>
                     </div>
-                    <div class="solutions-section_4boxes_box2">
+                    <div class="solutions-section_4boxes_box2"  data-aos="fade-left" data-aos-duration="2000" data-aos-delay="250">
                         <div class="card">
                             <img src="./img/icon-5.png" alt="icon 4"/>
                             <p>Full-time <br> employees
                             </p>
                         </div>
                     </div>
-                    <div class="solutions-section_4boxes_box3">
+                    <div class="solutions-section_4boxes_box3" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="450">
                         <div class="card">
                             <img src="./img/icon-6.png" alt="icon 4"/>
                             <p>Temp-to-perm <br> hires</p>
                         </div>
                     </div>
-                    <div class="solutions-section_4boxes_box4">
+                    <div class="solutions-section_4boxes_box4" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="750">
                         <div class="card">
                             <img src="./img/icon-6.png" alt="icon 4"/>
                             <p>Consulting <br> services</p>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -279,6 +344,7 @@
         </footer>
     </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
