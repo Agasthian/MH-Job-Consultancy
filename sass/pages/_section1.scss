@@ -35,11 +35,12 @@
                 transition: 0.3s ease;
 
                 .title{
-                    font-size: 4rem;
+                    font-size: 3rem;
                     font-weight: 700;
                     color: #fff;
                     text-shadow: $text-shadow;
                     margin-bottom: 20px;
+                    line-height: 4rem;
                     transform: translateY(-50px);
                     opacity: 0;
                 }

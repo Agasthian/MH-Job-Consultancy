@@ -356,11 +356,12 @@ p {
         margin: 0 200px;
         transition: 0.3s ease; }
         .landing .bg-slider .swiper-slide .text-content .title {
-          font-size: 4rem;
+          font-size: 3rem;
           font-weight: 700;
           color: #fff;
           text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
           margin-bottom: 20px;
+          line-height: 4rem;
           transform: translateY(-50px);
           opacity: 0; }
         .landing .bg-slider .swiper-slide .text-content p {
