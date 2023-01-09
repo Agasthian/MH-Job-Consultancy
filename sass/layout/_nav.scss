@@ -11,8 +11,8 @@
 		justify-content: space-between;
 		align-items: center;
 		min-height: 13vh;
-		-webkit-box-shadow: 0 0 20px 0 #cecece;
-		box-shadow: 0 0 20px 0 #cecece;
+		-webkit-box-shadow: 0 0 20px 0 #000;
+		box-shadow: 0 0 20px 0 #000;
 	
 		@include respond(small) {
 			min-height: 8vh;
@@ -28,7 +28,7 @@
 		.logo {
 			padding:14px 20px 15px 35px;
 			background: $color-primary;
-			border-bottom-right-radius: 25px;
+			
 			@include respond(tab) {
 				padding: 33px 5px;
 			}
@@ -37,21 +37,29 @@
 			}
 	
 			img{
-				width: 80%;
+				width: 80px;	
+				
 				@include respond(small) {
-					width: 150px;	
 				}
 			}
 		}
-	
+		
+		.nav-right-top{
+			margin-right: 5rem;
+			#linked,#watsap{
+				width: 20px;
+			}
+		}
+
 		ul.main-nav {
 			display: flex;
-			width: 65%;
+			// width: 50%;
 			justify-content: space-around;		
-			
+			margin-top: 1rem;
 	
 			li{
 				list-style: none;
+				margin-right: 5rem;
 			}
 			a {
 				text-decoration: none;

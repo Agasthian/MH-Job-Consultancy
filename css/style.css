@@ -197,8 +197,8 @@ p {
     justify-content: space-between;
     align-items: center;
     min-height: 13vh;
-    -webkit-box-shadow: 0 0 20px 0 #cecece;
-    box-shadow: 0 0 20px 0 #cecece; }
+    -webkit-box-shadow: 0 0 20px 0 #000;
+    box-shadow: 0 0 20px 0 #000; }
     @media (max-width: 26.62em) {
       .header .header-flex_wrappr {
         min-height: 8vh; } }
@@ -210,8 +210,7 @@ p {
         min-height: 8vh; } }
     .header .header-flex_wrappr .logo {
       padding: 14px 20px 15px 35px;
-      background: #f4bf44;
-      border-bottom-right-radius: 25px; }
+      background: #f4bf44; }
       @media (min-width: 48.06em) {
         .header .header-flex_wrappr .logo {
           padding: 33px 5px; } }
@@ -219,16 +218,18 @@ p {
         .header .header-flex_wrappr .logo {
           padding: 15px 10px; } }
       .header .header-flex_wrappr .logo img {
-        width: 80%; }
-        @media (max-width: 26.62em) {
-          .header .header-flex_wrappr .logo img {
-            width: 150px; } }
+        width: 80px; }
+    .header .header-flex_wrappr .nav-right-top {
+      margin-right: 5rem; }
+      .header .header-flex_wrappr .nav-right-top #linked, .header .header-flex_wrappr .nav-right-top #watsap {
+        width: 20px; }
     .header .header-flex_wrappr ul.main-nav {
       display: flex;
-      width: 65%;
-      justify-content: space-around; }
+      justify-content: space-around;
+      margin-top: 1rem; }
       .header .header-flex_wrappr ul.main-nav li {
-        list-style: none; }
+        list-style: none;
+        margin-right: 5rem; }
       .header .header-flex_wrappr ul.main-nav a {
         text-decoration: none;
         display: block;
@@ -358,6 +359,7 @@ p {
         .landing .bg-slider .swiper-slide .text-content .title {
           font-size: 3rem;
           font-weight: 700;
+          text-transform: uppercase;
           color: #fff;
           text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
           margin-bottom: 20px;
@@ -805,3 +807,47 @@ p {
       @media (max-width: 26.62em) {
         .solutions-section_4boxes_box4 {
           height: 200px; } }
+
+/*--------------------------------------------------------------
+# Section8 - Out Sourcing section
+--------------------------------------------------------------*/
+.outsourcing-section {
+  background: url("../../img/bg1new.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: 5rem; }
+  .outsourcing-section_flxWrapper {
+    display: flex; }
+    @media (max-width: 26.62em) {
+      .outsourcing-section_flxWrapper {
+        flex-direction: column; } }
+    .outsourcing-section_flxWrapper_left {
+      flex: 1 1 60%;
+      padding: 4rem 5rem; }
+    .outsourcing-section_flxWrapper_right {
+      flex: 1 1 40%;
+      background: url("../../img/section8img.png") no-repeat;
+      background-size: contain; }
+    .outsourcing-section_flxWrapper p {
+      margin-bottom: 2rem; }
+
+/*--------------------------------------------------------------
+# Section9 - Temp Staff section
+--------------------------------------------------------------*/
+.temp-staff-section {
+  height: 80vh;
+  margin-top: 10rem;
+  display: flex; }
+  @media (max-width: 26.62em) {
+    .temp-staff-section {
+      flex-direction: column; } }
+  .temp-staff-section_left {
+    flex: 1 1 40%;
+    background: url("../../img/section9img.jpg") no-repeat;
+    background-size: contain; }
+  .temp-staff-section_right {
+    flex: 1 1 60%;
+    padding: 4rem 5rem; }
+  .temp-staff-section p {
+    margin-bottom: 2rem; }
