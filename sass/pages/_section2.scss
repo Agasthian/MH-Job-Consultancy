@@ -13,10 +13,23 @@
         align-items: center;
         height: 100%;
         flex-wrap: wrap;
+
+        img{
+            width: 120px;
+        }
+        p{
+            color:#fff;
+            text-align: center;
+            font-weight: bold;
+            padding-top: 1rem;
+            @include respond(small) {
+                font-size: 2.2rem;
+            }
+        }
     }
 
     @include respond(small) {
-        height: 30rem;
+        min-height: 30rem;
 
         img{
             width:15rem;

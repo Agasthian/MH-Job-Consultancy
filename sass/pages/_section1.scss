@@ -34,6 +34,11 @@
                 margin:0 200px;
                 transition: 0.3s ease;
 
+                @include respond(small) {
+                    top: 60%;
+                    margin: 30px;
+                }
+
                 .title{
                     font-size: 3rem;
                     font-weight: 700;
@@ -57,6 +62,10 @@
                     box-shadow: $box-shadow;
                     transform: translateX(-80px);
                     opacity: 0;
+
+                    @include respond(small) {
+                        display: none;
+                    }
                 }
 
                 .read-btn{

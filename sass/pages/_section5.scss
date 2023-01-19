@@ -9,18 +9,26 @@
     display: flex;
     @include respond(small) {
         flex-direction: column;
+        min-height: 100vh;
     }
 
     &_left{
         flex: 1 1 40%;
         background: url('../../img/10.jpg')no-repeat;
         background-size: contain;
+        
+        @include respond(small) {
+            flex: 1 1 100%;
+        }
  
      }
      &_right{
-         
          flex: 1 1 60%;
          padding: 4rem 5rem;
+
+         @include respond(small) {
+            flex: 1 1 100%;
+         }
      }
 
      p{

@@ -8,12 +8,16 @@
     background-position: center;
     height: 100vh;
     margin-top: 5rem;
+    @include respond(small) {
+        height: 110vh;
+    }
     
     &-flxWrapper{
         display: flex; 
         
         @include respond(small) {
             flex-direction: column;
+            height: 100%;
         }
 
         &_left{
@@ -22,7 +26,7 @@
            flex: 1 1 60%;
            
            @include respond(small) {
-            // flex: 1 1 100%;
+            flex: 1 1 100%;
             padding: 3rem 0;
            }
 
@@ -34,7 +38,7 @@
             flex: 1 1 40%;
 
             @include respond(small) {
-                // flex: 1 1 100%;
+             flex: 1 1 100%;
             }
         
         }
