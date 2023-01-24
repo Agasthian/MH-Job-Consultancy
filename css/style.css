@@ -226,6 +226,9 @@ p {
       margin-right: 5rem; }
       .header .header-flex_wrappr .nav-right-top #linked, .header .header-flex_wrappr .nav-right-top #watsap {
         width: 20px; }
+      @media (max-width: 26.62em) {
+        .header .header-flex_wrappr .nav-right-top {
+          display: none; } }
     .header .header-flex_wrappr ul.main-nav {
       display: flex;
       justify-content: space-around;
@@ -268,7 +271,6 @@ p {
           background-color: transparent;
           color: #f4bf44;
           border: none;
-          width: 7rem;
           cursor: pointer; } }
       @media (max-width: 26.62em) {
         .header .header-flex_wrappr #hamburger {
@@ -643,8 +645,10 @@ p {
 # section 6 -   About section
 --------------------------------------------------------------*/
 .about-section {
-  margin-top: 15rem;
-  position: relative; }
+  margin-top: 15rem; }
+  @media (max-width: 26.62em) {
+    .about-section {
+      margin-top: 3rem; } }
   .about-section_bg-img {
     position: absolute;
     height: 300px;

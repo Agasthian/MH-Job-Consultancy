@@ -4,8 +4,10 @@
 
 .about-section{
     margin-top: 15rem;
-    position: relative;
     
+    @include respond(small) {
+        margin-top:3rem
+    }
     &_bg-img{
         position: absolute;
         height: 300px;
