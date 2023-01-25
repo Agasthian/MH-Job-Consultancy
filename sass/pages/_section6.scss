@@ -5,7 +5,7 @@
 .about-section{
     margin-top: 15rem;
     
-    @include respond(small) {
+    @include respond(tab-port) {
         margin-top:3rem
     }
     &_bg-img{

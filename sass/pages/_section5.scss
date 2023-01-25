@@ -7,7 +7,7 @@
     height: 80vh;
     margin-top: 10rem;
     display: flex;
-    @include respond(small) {
+    @include respond(tab-port) {
         flex-direction: column;
         min-height: 100vh;
     }
@@ -17,7 +17,7 @@
         background: url('../../img/10.jpg')no-repeat;
         background-size: contain;
         
-        @include respond(small) {
+        @include respond(tab-port) {
             flex: 1 1 100%;
         }
  
@@ -26,8 +26,9 @@
          flex: 1 1 60%;
          padding: 4rem 5rem;
 
-         @include respond(small) {
+         @include respond(tab-port) {
             flex: 1 1 100%;
+            padding: 4rem 0;
          }
      }
 

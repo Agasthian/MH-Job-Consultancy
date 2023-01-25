@@ -15,7 +15,7 @@
     &_flxWrapper{
         display: flex;
 
-        @include respond(small) {
+        @include respond(tab-port) {
             flex-direction: column;
             height: 100%;
         }
@@ -23,8 +23,8 @@
         &_left{      
             flex: 1 1 60%;
             padding: 4rem 5rem;
-            @include respond(small) {
-                flex: 1 1 100%;
+            @include respond(tab-port) {
+                flex: 1 1 50%;
                 padding: 3rem 0;
                }
      

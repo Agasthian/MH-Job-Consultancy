@@ -32,8 +32,8 @@
 				padding: 10px;
 			}
 			
-			@include respond(tab) {
-				padding: 33px 5px;
+			@include respond(tab-port) {
+				padding: 2rem 3rem;
 			}
 			@include respond(tab-land) {
 				padding: 15px 10px;
