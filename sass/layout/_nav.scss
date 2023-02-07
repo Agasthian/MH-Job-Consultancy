@@ -47,16 +47,6 @@
 			}
 		}
 		
-		.nav-right-top{
-			margin-right: 5rem;
-			#linked,#watsap{
-				width: 20px;
-			}
-			@include respond(small) {
-				display: none;
-			}
-		}
-
 		ul.main-nav {
 			display: flex;
 			// width: 50%;
@@ -85,6 +75,7 @@
 				display: none;
 			}
 		}
+
 	
 		ul.main-nav.show{
 			@include respond(tab-port) {
@@ -124,11 +115,28 @@
 				outline: none;
 			}
 		}
-		
-	
 	}
 	
-	
+	.nav-right{			
+		position: absolute;
+		bottom: 1rem;
+		right: 6rem;
+		color: $color-primary;
+		
+		a{
+			text-decoration: none;
+		}
+		#linked,#watsap{
+			width: 20px;
+			
+		}
+		&_contact{
+
+			@include respond(tab-port) {
+				display: none;
+			}
+		}
+	}
 	
 	
 	
