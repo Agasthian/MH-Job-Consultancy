@@ -36,11 +36,11 @@
 				padding: 2rem 3rem;
 			}
 			@include respond(tab-land) {
-				padding: 15px 10px;
+				padding: 5px 10px;
 			}
 	
 			img{
-				width: 80px;	
+				width: 95px;	
 				
 				@include respond(small) {
 				}

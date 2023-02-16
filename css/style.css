@@ -219,9 +219,9 @@ p {
           padding: 2rem 3rem; } }
       @media (min-width: 64em) {
         .header .header-flex_wrappr .logo {
-          padding: 15px 10px; } }
+          padding: 5px 10px; } }
       .header .header-flex_wrappr .logo img {
-        width: 80px; }
+        width: 95px; }
     .header .header-flex_wrappr ul.main-nav {
       display: flex;
       justify-content: space-around;
