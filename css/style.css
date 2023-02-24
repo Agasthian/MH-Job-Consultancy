@@ -746,7 +746,7 @@ p {
     background-image: url("../../img/pattern-6.png");
     background-size: cover;
     background-repeat: no-repeat;
-    top: 30rem;
+    top: 15rem;
     left: 0px;
     bottom: 0px;
     right: 0px;
@@ -925,3 +925,18 @@ p {
         padding: 4rem 0; } }
   .temp-staff-section p {
     margin-bottom: 2rem; }
+
+.client-logo {
+  text-align: center; }
+  .client-logo h2 {
+    margin-bottom: 3rem; }
+  .client-logo_flex_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4rem; }
+    .client-logo_flex_wrapper img {
+      width: 20rem;
+      height: 100%; }
+    .client-logo_flex_wrapper img#client2 {
+      width: 10rem; }

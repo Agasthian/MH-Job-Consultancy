@@ -1,0 +1,21 @@
+.client-logo{
+    
+    text-align: center;
+    h2{
+        margin-bottom: 3rem;
+    }
+    &_flex_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+
+        img{
+            width: 20rem;
+            height: 100%;
+        }
+        img#client2{
+            width: 10rem;
+        }
+    }
+}
