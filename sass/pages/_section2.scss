@@ -21,7 +21,7 @@
             color:#fff;
             text-align: center;
             font-weight: bold;
-            padding-top: 1rem;
+            
             @include respond(small) {
                 font-size: 2.2rem;
             }

@@ -70,7 +70,7 @@ h1 {
 h2 {
   font-size: 3rem; }
 
-p {
+p, ul {
   font-size: 1.6rem;
   text-align: justify; }
 
@@ -106,6 +106,55 @@ p {
   color: #ac1f2d;
   text-transform: uppercase;
   font-weight: 600; }
+
+/********* Custom heading ***************/
+.custom_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .custom_heading_subtext {
+    color: #ac1f2d;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    z-index: 2; }
+    .custom_heading_subtext:before {
+      content: "";
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      background-color: #F0E6E0;
+      border-radius: 5px;
+      z-index: -1;
+      bottom: -1rem;
+      left: -2rem; }
+      @media (max-width: 26.62em) {
+        .custom_heading_subtext:before {
+          height: 40px;
+          width: 40px; } }
+    .custom_heading_subtext:after {
+      content: '';
+      position: absolute;
+      height: 25px;
+      width: 25px;
+      background-color: #F0E6E0;
+      border: 2.5px solid #fff;
+      border-radius: 5px;
+      z-index: 0;
+      bottom: 2.5rem;
+      left: 1.5rem; }
+      @media (max-width: 26.62em) {
+        .custom_heading_subtext:after {
+          bottom: 3rem; } }
+  .custom_heading h2 {
+    margin-top: 1rem;
+    font-size: 3.8rem; }
+    @media (max-width: 26.62em) {
+      .custom_heading h2 {
+        font-size: 3rem; } }
+  .custom_heading p {
+    text-align: center; }
 
 .btn, .btn:link, .btn:visited {
   font-size: 1.4rem;
@@ -224,8 +273,7 @@ p {
         width: 95px; }
     .header .header-flex_wrappr ul.main-nav {
       display: flex;
-      justify-content: space-around;
-      margin-top: 1rem; }
+      justify-content: space-around; }
       .header .header-flex_wrappr ul.main-nav li {
         list-style: none;
         margin-right: 5rem; }
@@ -234,7 +282,7 @@ p {
         display: block;
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         transition: ease-in 0.2s all; }
         .header .header-flex_wrappr ul.main-nav a:hover {
           color: #ac1f2d;
@@ -486,8 +534,7 @@ p {
     .client-section_flex-wrapper p {
       color: #fff;
       text-align: center;
-      font-weight: bold;
-      padding-top: 1rem; }
+      font-weight: bold; }
       @media (max-width: 26.62em) {
         .client-section_flex-wrapper p {
           font-size: 2.2rem; } }
@@ -502,54 +549,6 @@ p {
 --------------------------------------------------------------*/
 .welcome-section {
   margin-top: 7rem; }
-  .welcome-section_heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    .welcome-section_heading_subtext {
-      color: #ac1f2d;
-      text-transform: uppercase;
-      font-weight: 600;
-      position: relative;
-      z-index: 2; }
-      .welcome-section_heading_subtext:before {
-        content: "";
-        position: absolute;
-        height: 50px;
-        width: 50px;
-        background-color: #F0E6E0;
-        border-radius: 5px;
-        z-index: -1;
-        bottom: -1rem;
-        left: -2rem; }
-        @media (max-width: 26.62em) {
-          .welcome-section_heading_subtext:before {
-            height: 40px;
-            width: 40px; } }
-      .welcome-section_heading_subtext:after {
-        content: '';
-        position: absolute;
-        height: 25px;
-        width: 25px;
-        background-color: #F0E6E0;
-        border: 2.5px solid #fff;
-        border-radius: 5px;
-        z-index: 0;
-        bottom: 2.5rem;
-        left: 1.5rem; }
-        @media (max-width: 26.62em) {
-          .welcome-section_heading_subtext:after {
-            bottom: 3rem; } }
-    .welcome-section_heading h2 {
-      margin-top: 1rem;
-      font-size: 3.8rem; }
-      @media (max-width: 26.62em) {
-        .welcome-section_heading h2 {
-          font-size: 3rem; } }
-    .welcome-section_heading p {
-      width: 40rem;
-      text-align: center; }
   .welcome-section_content-wrapper {
     margin-top: 3rem;
     display: flex;
@@ -571,7 +570,7 @@ p {
         line-height: 4rem;
         margin: 1rem 0; }
       .welcome-section_content-wrapper .side-content_icons {
-        margin-top: 5rem;
+        margin-top: 2rem;
         display: flex;
         justify-content: space-between; }
         .welcome-section_content-wrapper .side-content_icons p {
@@ -631,7 +630,7 @@ p {
 --------------------------------------------------------------*/
 .nonitServices-section {
   height: 80vh;
-  margin-top: 10rem;
+  margin-top: 6rem;
   display: flex; }
   @media (max-width: 48em) {
     .nonitServices-section {
@@ -657,12 +656,12 @@ p {
 /*--------------------------------------------------------------
 # section 6 -   About section
 --------------------------------------------------------------*/
-.about-section {
+.what-section {
   margin-top: 15rem; }
   @media (max-width: 48em) {
-    .about-section {
+    .what-section {
       margin-top: 3rem; } }
-  .about-section_bg-img {
+  .what-section_bg-img {
     position: absolute;
     height: 300px;
     width: 100%;
@@ -673,25 +672,25 @@ p {
     z-index: -2;
     top: 423px; }
     @media (max-width: 26.62em) {
-      .about-section_bg-img {
+      .what-section_bg-img {
         top: 245px; } }
-  .about-section_content_box {
+  .what-section_content_box {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
     box-shadow: 0 0 20px 0 #cecece;
     border-radius: 10px; }
     @media (max-width: 26.62em) {
-      .about-section_content_box {
+      .what-section_content_box {
         flex-wrap: wrap; } }
-    .about-section_content_box_left {
+    .what-section_content_box_left {
       flex: 1 1 55%;
       display: flex;
       flex-direction: column; }
-      .about-section_content_box_left .image-box img {
+      .what-section_content_box_left .image-box img {
         width: 100%;
         height: 100%; }
-      .about-section_content_box_left .inner-box {
+      .what-section_content_box_left .inner-box {
         background-color: #f4bf44;
         height: 100%;
         padding: 4rem;
@@ -700,34 +699,34 @@ p {
         align-items: center;
         flex-direction: column; }
         @media (max-width: 26.62em) {
-          .about-section_content_box_left .inner-box {
+          .what-section_content_box_left .inner-box {
             height: 45rem; } }
         @media (max-width: 26.62em) {
-          .about-section_content_box_left .inner-box img {
+          .what-section_content_box_left .inner-box img {
             width: 10rem; } }
-        .about-section_content_box_left .inner-box h3 {
+        .what-section_content_box_left .inner-box h3 {
           color: #fff;
           font-size: 2rem;
           width: 20rem;
           text-align: center;
           margin-top: 2rem; }
-    .about-section_content_box_right {
+    .what-section_content_box_right {
       flex: 1 1 45%;
       padding: 6rem;
       background-color: #fff; }
-      .about-section_content_box_right h2 {
+      .what-section_content_box_right h2 {
         margin: 0rem 0px 2rem 0;
         font-size: 3rem; }
-      .about-section_content_box_right .auth-box {
+      .what-section_content_box_right .auth-box {
         margin-top: 5rem;
         background-color: #F0E6E0;
         border-radius: 25px;
         padding: 4rem 5rem;
         justify-content: center; }
         @media (max-width: 26.62em) {
-          .about-section_content_box_right .auth-box {
+          .what-section_content_box_right .auth-box {
             border-radius: 15px; } }
-        .about-section_content_box_right .auth-box h3 {
+        .what-section_content_box_right .auth-box h3 {
           font-size: 1.8rem; }
 
 /*--------------------------------------------------------------
@@ -756,15 +755,6 @@ p {
     @media (max-width: 26.62em) {
       .solutions-section_bg-img {
         display: none; } }
-  .solutions-section h2 {
-    margin: 1rem 0;
-    font-size: 4rem; }
-  .solutions-section p {
-    padding: 0 2%;
-    text-align: center; }
-    @media (max-width: 26.62em) {
-      .solutions-section p {
-        padding: 0; } }
   .solutions-section_4boxes {
     margin-top: 5rem;
     display: flex;
@@ -883,7 +873,8 @@ p {
         height: 100%; } }
     .outsourcing-section_flxWrapper_left {
       flex: 1 1 60%;
-      padding: 4rem 5rem; }
+      padding: 4rem 5rem;
+      margin-top: 5rem; }
       @media (max-width: 48em) {
         .outsourcing-section_flxWrapper_left {
           flex: 1 1 50%;

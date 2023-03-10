@@ -29,19 +29,6 @@
         }
     }
     
-    h2{
-        margin: 1rem 0;
-        font-size: 4rem;
-
-    }
-    p{
-        padding: 0 2%;
-        text-align: center;
-        @include respond(small) {
-            padding: 0;
-        }
-        
-    }
 
     &_4boxes{
         margin-top: 5rem;
@@ -125,8 +112,6 @@
             @include respond(small) {
                 height: 200px;  
             }
-
-
         }
         &_box3{
             background-image: url('../../img/8.jpg');
