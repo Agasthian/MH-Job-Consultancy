@@ -381,7 +381,11 @@ p, ul {
     .footer-section_top_widget3 {
       flex: 1 0 33%; }
   .footer-section_bottom hr {
-    border: 1px solid  #333; }
+    border: 1px solid  #333;
+    margin: 1rem 0; }
+  .footer-section_bottom img {
+    width: 3rem;
+    margin-top: 0.5rem; }
   .footer-section_bottom_content {
     display: flex;
     justify-content: space-between; }
@@ -925,7 +929,8 @@ p, ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    grid-gap: 3rem; }
     .client-logo_flex_wrapper img {
       width: 20rem;
       height: 100%; }

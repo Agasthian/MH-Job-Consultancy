@@ -60,6 +60,12 @@
     &_bottom{
         hr{
             border:1px solid  #333;
+            margin: 1rem 0; 
+            
+        }
+        img{
+            width: 3rem;
+            margin-top: 0.5rem;
         }
         &_content{
             display: flex;
